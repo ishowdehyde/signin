@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import olawale from "@/app/image/ishowdehyde. new.png";
 
 export default function myLogin() {
   const router = useRouter();
@@ -39,9 +41,22 @@ export default function myLogin() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black">
       <div className="bg-white shadow-md rounded-lg p-8 w-96">
-        <h1 className="text-2xl font-semibold text-center text-gray-700 mb-6">
+        <h2 className="flex items-center justify-center text-4xl font-bold text-blue-600 mt-8">
+          <Image
+            src={olawale}
+            alt="olawale"
+            width="100"
+            height="100"
+            className="h-18 w-18 mr-4"
+          />
+
+          <div className="h-12 w-px bg-black mx-6"></div>
+
+          <span>Ishow Portal</span>
+        </h2>
+        <h3 className="text-2xl font-semibold text-center text-gray-700 mb-6">
           {loading ? "Processing" : "Login"}
-        </h1>
+        </h3>
         <hr className="mb-2 " />
         <label
           htmlFor="email"
