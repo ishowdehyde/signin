@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
       message: "User Found",
       data: user,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     return NextResponse.json({ error: error.mesage }, { status: 400 });
   }
 }

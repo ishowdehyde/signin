@@ -26,7 +26,7 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex-col items-center py-10 px-4">
+    <div className="min-h-screen bg-gray-100 flex-col items-center py-10 px-4 ">
       <div className="max-w-lg w-full bg-white p-6 rounded-lg shadow-lg space-y-4">
         <h2 className="flex items-center justify-center text-4xl font-bold text-blue-600 mt-8">
           <Image

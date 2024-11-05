@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -23,7 +23,7 @@ export default function myLogin() {
       const response = await axios.post("api/users/login", user);
       console.log("Login success", response.data);
       router.push("/profile");
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.log("Login failed", error.message);
     } finally {
       setLoading(false);

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function editProfile({ params }: any) {
+export default function editProfile(params: unknown) {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
